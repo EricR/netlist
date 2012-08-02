@@ -4,7 +4,7 @@ require 'json'
 
 target_org = ARGV[0]
 
-puts "[!] Starting script..."
+puts "[!] Starting NetList script..."
 
 orgs = {}
 org_search_results = Subexec.run("curl -s -H \"Accept: application/json\" \"http://whois.arin.net/rest/orgs;name=#{target_org}*\"").output
