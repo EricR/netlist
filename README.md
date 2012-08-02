@@ -4,7 +4,7 @@ NetList is a small networking and security auditing script I wrote in Ruby. Give
 the ARIN database for an organization and all of its related networks. This can assist a pen tester in finding out
 which networks are owned by the target, and noting them for a later scan and audit.
 
-## Example
+## Example Output
 
     $ ruby netlist.rb facebook
     [!] Starting NetList script...
@@ -42,3 +42,25 @@ which networks are owned by the target, and noting them for a later scan and aud
       173.252.64.0 - 173.252.127.255
 
     [!] Done. Enjoy!
+    
+    $ ruby netlist.rb nasdaq
+    [!] Starting NetList script...
+    [!] Found 3 organizations matching your query, "nasdaq".
+    [!] Starting network lookup queries...
+
+    ----- NASDAQ (NASDA-4) -----
+
+    * NASDAQ313-245-32
+      12.148.245.32 - 12.148.245.63
+
+    ----- NASDAQ Stock Market (NSM-28) -----
+
+    * SAVV-S259211-0
+      216.90.143.224 - 216.90.143.231
+
+    ----- Nasdaq Stock Market, Inc., The (NSMI-3) -----
+
+    * SAVV-N05736-0
+      209.144.94.88 - 209.144.94.95
+
+    [!] Done. Enj
