@@ -1,8 +1,8 @@
 # NetList
 
-NetList is a small networking and security aduting script I wrote in Ruby. Given a search term, it will query
+NetList is a small networking and security auditing script I wrote in Ruby. Given a search term, it will query
 the ARIN database for an organization and all of its related networks. This can assist a pen tester in finding out
-which networks are owned by the target, and noting them for a later scan and aduit.
+which networks are owned by the target, and noting them for a later scan and audit.
 
 ## Example
 
