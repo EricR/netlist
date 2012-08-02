@@ -63,4 +63,4 @@ which networks are owned by the target, and noting them for a later scan and aud
     * SAVV-N05736-0
       209.144.94.88 - 209.144.94.95
 
-    [!] Done. Enj
+    [!] Done. Enjoy!
