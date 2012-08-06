@@ -1,3 +1,4 @@
+require 'rubygems'
 require 'subexec'
 require 'open-uri'
 require 'json'
