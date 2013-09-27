@@ -11,8 +11,10 @@ orgs = {}
 org_search_results = Subexec.run("curl -s -H \"Accept: application/json\" \"http://whois.arin.net/rest/orgs;name=#{target_org}*\"").output
 begin
   org_search_results = JSON.parse(org_search_results)
-  org_search_results["orgs"]["orgRef"].each do |org|
-    orgs[org["@handle"]] = {:name => org["@name"] }
+  results = org_search_results["orgs"]["orgRef"]
+  results = [results] if results.kind_of? Hash
+  results.each do |org|
+	orgs[org["@handle"]] = {:name => org["@name"] }
   end
 rescue
   ""
